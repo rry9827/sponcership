@@ -1,0 +1,302 @@
+body{
+  font-family: arial;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: arial;
+}
+div#navbarNav {
+    justify-content: flex-end;
+}
+.hightvh{
+  height: 100vh;
+}
+.slider {
+    position: relative;
+    overflow: hidden;
+}
+.bg-overly{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.49);
+  z-index: 1;
+}
+.slider-data {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+}
+.slider-data h1 {
+    color: white;
+    font-size: 75px;
+    font-family: arial;
+    letter-spacing: -3px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.slider-data ul {
+    padding: 0;
+}
+.slider-data ul li {
+    display: inline-block;
+    padding: 0px 15px;
+}
+.slider-data ul li a {
+    color: white;
+    font-size: 15px;
+}
+.slider-data ul li a:hover{
+  opacity: 0.5;
+}
+.bounce {
+    display: inline-block;
+    padding: 38px;
+}
+.bounce a {
+    font-size: 30px;
+    color: white;
+}
+.bounce {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+}
+.bounce {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    -moz-animation: bounce 2s infinite;
+    -o-animation: bounce 2s infinite;
+}
+.left-traingle-left::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 10vw solid transparent;
+    border-left: 24vw solid rgb(245, 245, 245);
+    border-bottom: 0px solid transparent;
+    z-index: 10;
+}
+.left-traingle-right::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 10vw solid transparent;
+    border-right: 80vw solid rgb(245, 245, 245);
+    border-bottom: 0px solid transparent;
+    z-index: 10;
+}
+.right-traingle-right::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 10vw solid transparent;
+    border-right: 24vw solid white;
+    border-bottom: 0px solid transparent;
+    z-index: 10;
+}
+.right-traingle-left::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 10vw solid transparent;
+    border-left: 80vw solid white;
+    border-bottom: 0px solid transparent;
+    z-index: 10;
+}
+.navigation{
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  display: none;
+  background: rgb(245, 245, 245);
+}
+.about{
+  position: relative;
+  padding: 150px 0px;
+  background: rgb(245, 245, 245);
+  padding-bottom: 200px;
+  overflow: hidden;
+}
+.about-data {
+    margin-top: 35px;
+}
+.about-data h2 {
+    text-transform: uppercase;
+    margin-bottom: 27px;
+    font-weight: 700;
+    font-size: 25px;
+}
+.about img {
+    box-shadow: -43px 43px 0px #b8b8b8;
+}
+.portfolio{
+  position: relative;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  overflow: hidden;
+}
+.control {
+    background: none;
+    border: none;
+    color: gray;
+}
+.mixitup-control-active {
+    color: black;
+}
+a{
+  transition: all 5s linear;
+}
+.portfolio-gallary {
+    flex-wrap: wrap;
+    display: flex;
+}
+.portfolio-gallary .mix{
+  padding: 15px 15px;
+}
+.portfolio h1 {
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.blog{
+  position: relative;
+  padding: 100px 0px;
+  width: 100%;
+  overflow: hidden;
+  background: rgb(245, 245, 245);
+  padding-bottom: 200px;
+}
+.blog h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0px;
+    color: #635f5f;
+}
+.blog span{
+  font-size: 12px;
+  color: #635f5f;
+  font-weight: 600;
+}
+.blog span span{
+  font-weight: 400;
+}
+.blog h2 {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 600;
+}
+.contact {
+    padding: 100px 0px;
+    position: relative;
+    width: 100%;
+    background: #fdfdfd;
+}
+.contact h1{
+  font-size: 29px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.contact h2{
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-align: right;
+}
+.form-contact input {
+    width: 46%;
+    border: none;
+    padding-bottom: 10px;
+    margin-right: 20px;
+    border-bottom: 1px solid grey;
+    margin-bottom: 20px;
+}
+.form-contact textarea{
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid grey;
+}
+@media (max-width: 992px){
+.slider-data h1 {
+  font-size: 68px;
+}
+}
+@media (max-width: 768px){
+.hightvh{
+  width: auto !important;
+}
+.slider-data h1 {
+  font-size: 51px;
+}
+.blog img{
+  margin-top: 40px;
+}
+.about img{
+  box-shadow: none;
+}
+.form-contact input{
+  width: 90%;
+}
+.contact h2{
+  margin-top: 50px;
+  text-align: left !important;
+}
+}
+@media (max-width: 576px){
+.slider-data h1 {
+  font-size: 35px;
+}
+.blog img{
+  margin-top: 40px;
+}
+.about img{
+  box-shadow: none;
+}
+.form-contact input{
+  width: 90%;
+}
+.contact h2{
+  margin-top: 50px;
+  text-align: left !important;
+}
+.about {
+    padding: 50px 0px;
+    padding-bottom: 60px;
+}
+.portfolio {
+    padding-top: 30px;
+    padding-bottom: 45px;
+}
+.portfolio h1 {
+    padding: 0 20px;
+}
+.blog {
+    padding: 35px 0px;
+    padding-bottom: 66px;
+}
+.contact {
+	padding: 35px 0px;
+}
+}
